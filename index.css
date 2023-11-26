@@ -1,0 +1,237 @@
+body {
+    overflow-x: hidden;
+}
+
+/* ------ */
+/* Header */
+/* ------ */
+#Home-header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+/* --------- */
+/* Container */
+/* --------- */
+#container {
+    height: 100vh
+}
+
+.main-sec {
+    display: flex;
+}
+
+/* --------- */
+/* Left Side */
+/* --------- */
+#left-side {
+    text-align: center;
+    background-color: rgba(255, 252, 252, 0.5);
+    width: 63%;
+}
+#left-side .vision-wrapper {
+    padding: 10px 70px 10px 70px;
+}
+#left-side p {
+    letter-spacing: 3px;
+    line-height: 1.8;
+    margin-bottom: 80px;
+}
+#left-side img {
+    opacity: 0.8;
+}
+#left-side .reviews-wrapper {
+    padding: 0 70px 60px 70px;
+}
+#left-side .reviews-wrapper #title {
+    text-transform: capitalize;
+}
+#left-side #reviews {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 100%);
+    margin: 10px;
+    flex-wrap: wrap;
+}
+#left-side .review {
+    flex: 1;
+    padding: 10px;
+    background-color: hsla(0, 0%, 97%, 0.787);
+    border-radius: 6px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.079);
+}
+#left-side .review img {
+    width: 4rem;
+}
+#left-side .title {
+    line-height: 0.1;
+}
+
+/* ---------- */
+/* Right Side */
+/* ---------- */
+#right-side {
+    background-color: hsla(0, 0%, 100%, 0.787);
+    width: 37%;
+}
+#right-side .courses-wrapper {
+    padding: 15px;
+}
+#right-side .courses-wrapper .title {
+    text-transform: capitalize;
+}
+#right-side .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#right-side .course-card {
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48.5%;
+    margin-bottom: 10px;
+}
+#right-side .course-card .content {
+    padding: 20px;
+}
+#right-side .course-card .content h3, #right-side .course-card .content p {
+    word-wrap: break-word;
+}
+#right-side .course-card .content img {
+    opacity: 0.5;
+    height: 4rem;
+    width: auto;
+}
+#right-side .course-card .content img:hover {
+    opacity: 1;
+}
+#right-side .course-card .content .checked {
+    color: orange;
+}
+
+/* ------ */
+/* Footer */
+/* ------ */
+#Home-footer {
+    grid-column: 1/4;
+    grid-row: 5/6;
+}
+
+/* Define the animation */
+@keyframes moveText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(50px); } 
+    100% { transform: translateX(0); }
+}
+
+/* Apply the animation to the text element */
+.moving-text {
+    animation: moveText 2s infinite;
+    margin-top: 70px;
+    margin-bottom: 95px;
+    font-size: 32px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    #right-side .course-card {
+        width: 100vw;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #left-side, #right-side {
+        width: 100%;
+    }
+    .main-sec {
+        flex-wrap: wrap;
+    }
+    #reviews {
+        flex-wrap: wrap;
+    }
+    #container {
+        width: 100%;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo-title {
+        margin-bottom: 20px;
+    }
+    #right-side .courses-wrapper .title {
+        text-align: center;
+    }
+    #right-side .courses-wrapper {
+        padding: 20px;
+    }
+    #left-side p {
+        letter-spacing: 1.5px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
+    #left-side .reviews-wrapper #title {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    header {
+        justify-content: center;
+    }
+    #left-side .reviews-wrapper {
+        padding: 20px;
+    }
+    .moving-text {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+    #left-side .vision-wrapper {
+        padding: 10px 30px 10px 30px;
+    }
+    #right-side .course-card {
+        width: 46%;
+    }
+    #right-side .course-card .content img {
+        width: auto;
+    }
+    #left-side .review img {
+        width: 7vw;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #right-side .course-card {
+        width: 100vw;
+        margin: 10px;
+    }
+}
+.theme2 {
+    background-color: #333;
+    color:white; }
+    
+    
+    .theme2 header {
+        background-color: #555;
+        color: black;
+    }
+    
+    .theme2 footer {
+        background-color: #555;
+        color: black;
+    } 
+    
+    .theme2 #right-side {
+        background-color: gray;
+       color: blue;
+    }
+    
+    .theme2 #reviews {
+        background-color: gray;
+        color: blue;}

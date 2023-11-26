@@ -1,0 +1,85 @@
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for form inputs */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+  background-color: #49bfeb;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* styling for the form container */
+form {
+  max-width: 600px;
+
+  margin: 20px auto;
+
+  padding: 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  background-color: rgba(73, 190, 235, 0.2);
+}
+
+#tittle {
+  text-align: center;
+
+  font-family: italic;
+}
+
+#top-image-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#top-image-container img {
+  max-width: 100%;
+}
+
+.gender {
+  height: 50%;
+}
+#childPhotoDisplay {
+  visibility: hidden;
+  display: none;
+}
+
+#print-only,
+#print-only * {
+  visibility: hidden;
+  display: none;
+}
+
+@media print {
+  body * {
+    visibility: hidden; /* Hide everything on the page */
+  }
+  #print-only,
+  #print-only * {
+    visibility: visible; /* Only the kid info section will be visible */
+    display: block;
+  }
+  #print-only {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

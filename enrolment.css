@@ -1,0 +1,107 @@
+
+
+form {
+
+	
+   max-width: 700px; 
+	
+    margin: 20px auto; 
+	
+    padding: 20px; 
+	
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+	
+   background-color: rgba(73, 190, 235, 0.1);
+	
+	font-family: italic ;
+	
+	border-radius: 5px;
+	
+	text-align: center;
+
+	
+	
+}
+
+
+/* Style for filter section */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Style for dropdowns */
+select {
+    width: 45%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+	border-radius: 5px;
+}
+
+/* Style for checkboxes */
+label {
+   
+    margin-bottom: 15px; 
+	display: flex;
+	border-radius: 5px;
+	
+	
+}
+
+/* Style for course images */
+img {
+    max-width: 100px; 
+    margin-right: 10px; 
+}
+
+/* Style for submit button }*/
+input[type="submit"] {
+  padding: 10px 20px; 
+    font-size: 1em; 
+    border: none;
+    cursor: pointer;
+ border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+label input[type="checkbox"] {
+    border: 2px solid #4e32a8 ; 
+    padding: 5px; 
+}
+
+#top-image-container {
+    text-align: center; 
+    padding: 20px;
+}
+
+#top-image-container img {
+    max-width: 100%; 
+	position : center ;
+}
+
+#tittle {
+	font-family: italic;
+	display: inline;
+}
+
+input[type="submit"] {
+
+    background-color: #49bfeb;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}

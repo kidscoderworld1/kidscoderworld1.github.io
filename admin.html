@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Administrator Dashboard</title>
+
+        <link rel="stylesheet" href="basics.css">
+        <link rel="stylesheet" href="admin.css">		<script src="theme-script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-title">
+                <img src="image/logo.png" alt="Kids Coders World Logo" id="logo" >  
+                <span>Kids Coders World</span>
+            </div>
+
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="tutors.html">Tutors</a>
+                <a href="admin.html">Administrator</a>
+                <a href="Parent Dashboard.html">Parent Dashboard</a>
+            </div>
+        </header>
+        
+        <main class="p-10">
+            <h1>Administrator Dashboard</h1>
+            <div class="date-area">
+                <p>The current week’s date : Sunday, </p>
+                <div id="date"></div>
+            </div>
+
+            <section>
+                <h2>Children Registered</h2>
+                <ul>
+                    <!-- List of all children names -->
+                    <li>Ali Ahmad</li>
+                    <li>Sara Ahmad</li>
+                    <li>Mohammed Ahmad</li>
+                    <div class="rest" style="display: none;">
+                        <li>Reema Ali</li>
+                        <li>Faisal Saleh</li>
+                        <li>Lama Sami</li>
+                        <li>Fahad Saad </li>
+                    </div>
+                    <li>
+                        <a href="javascript:void(0)" class="more">More</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Courses</h2>
+                <ul>
+                    <!-- Course 1 with instructor and children -->
+                    <li>
+                        Java
+                        <ul>
+                            <li>Instructor: Saleh Saad</li>
+                            <li>Children:
+                                <ul>
+                                    <li>Sara Ahmad</li>
+                                    <li>Ali Ahmad</li>
+                                    <div class="rest" style="display: none;">
+                                        <li>Reema Ali</li>
+                                        <li>Faisal Saleh</li>
+                                        <li>Fahad Saad </li>
+                                        
+                                    </div>
+                                    <li>
+                                        <a href="javascript:void(0)" class="more">More</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Course 2 with instructor and children -->
+                    <li>
+                        Python
+                        <ul>
+                            <li>Instructor: Lama Fahad</li>
+                            <li>Children:
+                                <ul>
+                                    <li>Mohammed Ahmad</li>
+                                    <li>Lama Sami</li>
+                                    <div class="rest" style="display: none;">
+                                        <li>Saleh Ali</li>
+                                        <li>Fahad Saad </li>
+                                    </div>
+                                    <li>
+                                        <a href="javascript:void(0)" class="more">More</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <div class="rest" style="display: none;">
+                        <!-- Course 3 with instructor and children -->
+                        <li>
+                            Fundamentals of programming
+                            <ul>
+                                <li>Instructor: Noura Khalid</li>
+                                <li>Children:
+                                    <ul>
+                                        <li>Mohammed Ahmad</li>
+                                        <li>Salma Saad</li>
+                                        <div class="rest" style="display: none;">
+                                            <li>Ali Ahmad</li>
+                                            <li>Sara Ahmad</li>
+                                            <li>Mohammed Ahmad</li>
+                                           
+                                        </div>
+                                        <li>
+                                            <a href="javascript:void(0)" class="more">More</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+
+                    <li>
+                        <a href="javascript:void(0)" class="more">More</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Tutors</h2>
+                <ul>
+                    <!-- Tutor 1 with courses -->
+                    <li>
+                        <a href="schedule1.html">Saleh Saad</a>
+                        <ul>
+                            <li>Robotics</li>
+                            <div class="rest" style="display: none;">
+                                <li>Python</li>
+                            </div>
+                            <li>
+                                <a href="javascript:void(0)" class="more">More</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Tutor 2 with courses -->
+                    <li>
+                        <a href="schedule2.html">Noura Khalid</a>
+                        <ul>
+                            <li>Fundamentals of programming</li>
+                            <div class="rest" style="display: none;">
+                                <li>C++</li>
+                            </div>
+                            <li>
+                                <a href="javascript:void(0)" class="more">More</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Tutor 3 with courses -->
+                    <li>
+                        <a href="schedule2.html">Malak Saleh</a>
+                        <ul>
+                            <li>Python programming language</li>
+                            <div class="rest" style="display: none;">
+                                <li>Lua</li>
+                            </div>
+                            <li>
+                                <a href="javascript:void(0)" class="more">More</a>
+                            </li>
+                        </ul>
+
+                        <a href="schedule2.html">Lama Fahad</a>
+                        <ul>
+                            <li>Java Programming Language</li>
+                            <div class="rest" style="display: none;">
+                                <li>Python programming language</li>
+                            </div>
+                            <li>
+                                <a href="javascript:void(0)" class="more">More</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    
+                    
+                    
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Contact info: +966535314427</p>
+            <a href="#">Mail</a>    
+            <div class="multimedia" >   
+                <br>
+                <img src="image/youtube.jpg" alt="" width="15 "  height="15 " />
+                <a href="https://www.youtube.com/" >youtube</a>
+                <img src="image/instagram.jpg" alt="" width="15 "  height="15" />
+                <a href="https://www.instagram.com/">instagram</a>
+                <img src="image/twitter.jpg" alt="" width="15 "  height="15 "  />
+                <a href="https://twitter.com/" >twitter</a>
+                <img src="image/snapchat.png"  alt="" width="15 "  height="15 " />
+                <a href="https://snapchat.com/" >snapchat</a>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>

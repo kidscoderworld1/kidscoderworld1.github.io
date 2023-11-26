@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+main {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.course-card h3 {
+    color: #0077cc;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.course-card button {
+    cursor: pointer;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.course-card button:hover {
+    background-color: #0055a5;
+}
+
+
+
+
+
+.icon {
+    margin-right: 10px;
+}
+
+
+/* Your Existing CSS Code */
+
+/* ... your existing styles ... */
+
+/* Styles for Course Evaluation Page */
+
+.evaluation-container {
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+	background-color: rgba(73, 190, 235, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, textarea, .rating input + label {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating input + label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.rating input:checked + label {
+    background-color: #ffcd00;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.rating {
+    display: flex;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.star {
+    color: #ccc; /* Gray out stars by default */
+}
+
+/* Color the stars based on rating */
+.rating[data-rating="5"] .star,
+.rating[data-rating="4"] .star:nth-child(-n+4),
+.rating[data-rating="3"] .star:nth-child(-n+3),
+.rating[data-rating="2"] .star:nth-child(-n+2),
+.rating[data-rating="1"] .star:nth-child(1) {
+    color: gold;
+}
+
+
+.course-card .remaining {
+    display: none;
+}
+
+
+.course-card:hover .remaining{
+    display: block;
+}

@@ -1,0 +1,96 @@
+
+ 
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.p-10 {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul ul {
+    margin-top: 5px;
+    max-height: 100%; 
+    overflow-y: auto;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004080;
+}
+
+#enrol-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#enrol-button:hover {
+    background-color: #004080;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date-area {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    #container {
+        width: 100%;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo-title {
+        margin-bottom: 20px;
+    }
+    header {
+        justify-content: center;
+    }
+}

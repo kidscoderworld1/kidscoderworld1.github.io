@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <link rel="stylesheet" href="basics.css">
+        <link rel="stylesheet" href="index.css">
+        <script src="theme-script.js"></script>
+
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function toggleTheme(){
+            const body = document. body;
+            body.classList.toggle('theme1');
+            body.classList.toggle(' theme2' ) ;
+            const currentTheme = body.classList.contains('theme1' ) ?'theme1' :'theme2';
+            locaLStorage.setItem('selectedTheme', currentTheme);
+            }
+            function applySavedTheme() {
+            const savedTheme = localStorage.getItem('selectedTheme');
+            if (savedTheme) {
+            document.body.classList.add(savedTheme);
+            }
+            }
+            window.addEventListener('DOMContentLoaded' , function(){
+            applySavedTheme();
+            if(window.locatuin.pathname.includes('index.html')){
+            applySavedTheme();
+            }
+            });
+            
+            </script>
+    </head>
+
+    <body>
+        <!-- Start Container -->
+        <div id="container">
+            <!-- Header -->
+            <header id="Home-header">
+                <div class="logo-title">
+                    <img src="image/logo.png" alt="Kids Coders World Logo" id="logo">
+                    <span>Kids Coders World</span>
+                </div>
+                <div class="navbar">
+                    <button id="customize-button" onclick="theme2()">Change the mode</button>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="tutors.html">Tutors</a>
+                    <a href="admin.html">Administrator</a>
+                    <a href="Parent Dashboard.html">Parent Dashboard</a>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <main>
+                <section class="main-sec">
+                    <!-- Left Side -->
+                    <div id="left-side">
+                        <!-- Vision -->
+                        <div class="vision-wrapper">
+                            <h1 class="moving-text">Kids Coders World !</h1>
+                            <h2>Vision</h2>
+                            <p>Our vision is to build a world where technology is a gateway to endless possibilities.by meeting the need for teaching programming to young children. We believe that everyone should have the tools, resources, and opportunities to harness the power of coding and make a positive impact on kids through the transformative potential of coding. </p>
+                            <hr>
+                        </div>
+
+                        <div class="reviews-wrapper">
+                            <!-- Reviews -->
+                            <h3 id="title">reviews:</h3>
+                            <div id="reviews">
+                                <div class="review">
+                                    <img src="image/Parent1.jpg" alt=" ">
+                                    <h3 class="P-N"> Valerie S.</h3>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <blockquote> " I thought a game was going to be extremely hard to make, but Kids Coders World made it really easy. "</blockquote>
+                                </div>
+                                <div class="review">
+                                    <img src="image/Parent2.jpg" alt=" ">
+                                    <h3 class="P-N"> Faisal M.</h3>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <blockquote> "There's so much opportunity once they understand coding.Its amazing to see them create incredible things"</blockquote>
+                                </div>
+                                <div class="review">
+                                    <img src="image/Parent3.jpg" alt=" ">
+                                    <h3 class="P-N"> Jack C.</h3>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <blockquote>" Kids Coders World has made programming fun, exciting, and simple and will help lead kids into their future. "</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div id="right-side">
+                        <div class="courses-wrapper">
+                            <h3 class="title">courses :</h3>
+
+                            <div class="courses">
+                                <!-- Course #1 -->
+                                <div class="course-card">
+                                    <div class="content">
+                                        <img src="image/Java.png" alt="course content" >
+                                        <h3>Java</h3>
+                                        <p>Description :Java is a fast, powerful programming language...</p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <br>
+                                        <button>view course</button>
+                                    </div>
+                                </div>
+
+                                <!-- Course #2 -->
+                                <div class="course-card">
+                                    <div class="content">
+                                        <img src="image/python.png" alt="course content">
+                                        <h3>Python </h3>
+                                        <p>Description : Is a high-level, interpreted, and general-purpose...</p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <br>
+                                        <button>view course</button>
+                                    </div>
+                                </div>
+
+                                <!-- Course #3 -->
+                                <div class="course-card">
+                                    <div class="content">
+                                        <img src="image/c++.png" alt="course content">
+                                        <h3>C++</h3>
+                                        <p>Description :General-purpose programming language created...</p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <br>
+                                        <button>view course</button>
+                                    </div>
+                                </div>
+
+                                <!-- Course #4 -->
+                                <div class="course-card">
+                                    <div class="content">
+                                        <img src="image/fundamentel.png" alt="course content">
+                                        <h3>Fundamentals of programming</h3>
+                                        <p>Description :foundational principles and concepts...</p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <br>
+                                        <button>view course</button>
+                                    </div>
+                                </div>
+
+                                <!-- Course #5 -->
+                                <div class="course-card">
+                                    <div class="content">
+                                        <img src="image/rob.png" alt="course content">
+                                        <h3>Robotic</h3>
+                                        <p>Introduction to building robots...</p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <br>
+                                        <button>view course</button>
+                                    </div>
+                                </div>
+
+                                <!-- Course #6 -->
+                                <div class="course-card">
+                                    <div class="content">
+                                        <img src="image/web.png" alt="course content" >
+                                        <h3>Web applications</h3>
+                                        <p>Description:educational program that focuses on teaching the design...</p>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <br>
+                                        <button>view course</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer id="Home-footer">
+                <p>Contact info: +966535314427</p>
+                <a href="#">Mail</a>
+                
+                <!-- Multimedia -->
+                <div class="multimedia" >
+                    <br>
+                    <img src="image/youtube.jpg" alt="" width="15 "  height="15 " />
+                    <a href="https://www.youtube.com/" >youtube</a>
+                    <img src="image/instagram.jpg" alt="" width="15 "  height="15" />
+                    <a href="https://www.instagram.com/">instagram</a>
+                    <img src="image/twitter.jpg" alt="" width="15 "  height="15 "  />
+                    <a href="https://twitter.com/" >twitter</a>
+                    <img src="image/snapchat.png"  alt="" width="15 "  height="15 " />
+                    <a href="https://snapchat.com/" >snapchat</a>
+                </div>
+            </footer>
+        </div>
+        <!-- End Container -->
+
+        <script>
+            // Function to toggle between themes
+            function toggleTheme() {
+            var body = document.body;
+            body.classList.toggle('theme1');
+            body.classList.toggle('theme2');
+            
+            // Save the current theme to localStorage
+            const currentTheme = body.classList.contains('theme1') ? 'theme1' : 'theme2';
+            localStorage.setItem('selectedTheme', currentTheme);
+            }
+            
+            // Apply saved theme on page load
+            function applySavedTheme() {
+            const savedTheme = localStorage.getItem('selectedTheme');
+            if (savedTheme) {
+            document.body.classList.add(savedTheme);
+            }
+            }
+            
+            window.addEventListener('DOMContentLoaded', function() {
+            applySavedTheme();
+            });
+            
+            // Add event listener to the customize button
+            var customizeButton = document.getElementById('customize-button');
+            customizeButton.addEventListener('click', toggleTheme);
+            
+            // Apply theme on other pages
+            if (window.location.pathname !== '/home.html') {
+            applySavedTheme();
+            }
+            
+            </script>
+    </body>
+</html>

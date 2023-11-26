@@ -1,0 +1,49 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+   
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+}
+
+  .WE {
+    background-color: rgba(183, 183, 183, 0.726);
+}
+.tableS{
+   margin: 30px;
+   
+}
+.course-1 {
+    background-color:#fff8e2; 
+}
+
+.course-2 {
+    background-color:#fdffddd0 ; 
+}
+
+.course-3{
+    background-color:#eeffd9; 
+    
+}
+tr.days {
+    background:#6587b5;
+    font-weight: bold; 
+    font-size: 20px;
+    
+}
+#name{
+    background-color: #e7f1ff;
+}
+/*
+:hover {background-color: coral;}
+ rgba(95, 158, 160, 0.655)*/

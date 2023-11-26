@@ -1,0 +1,93 @@
+/*style Parent dashboard page*/
+
+main {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.kids {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  content: center;
+  display: grid;
+  place-items: center;
+}
+
+.kids:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(73, 190, 235, 0.2);
+}
+
+.button-container button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+}
+
+.button-container button:hover {
+  background-color: #2980b9;
+}
+
+/* style tutors page*/
+
+#page {
+  flex-direction: columns;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  width: 100vw;
+  height: 270px;
+}
+
+.tutors {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  content: center;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.tutors:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pagesContainer {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pagesContainer > div {
+  margin: 0 15px;
+}
