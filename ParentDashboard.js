@@ -1,13 +1,13 @@
 var childtmp1 = {
   name: "Turki",
-  photo: "image/face1.png",
+  photo: "face1.png",
   gender: "male",
   dob: "2015-01-01",
   phone: "0540939534",
 };
 var childtmp2 = {
   name: "Lena",
-  photo: "image/face2.png",
+  photo: "face2.png",
   gender: "female",
   dob: "2017-01-01",
   phone: "0520939534",
